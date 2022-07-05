@@ -4,8 +4,6 @@ import sys
 
 aim_path = sys.argv[1]
 origin_path = os.path.join(aim_path, 'origin_json')
-if not os.path.exists(origin_path):
-    os.makedirs(origin_path)
 json_re_path = sys.argv[2]
 
 file_list = os.listdir(origin_path)
