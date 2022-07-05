@@ -4,7 +4,7 @@
     - Usage : ```bash get.sh <inspirehep_id> <temporary_directory> <target_json>```
     - ```get.sh``` gives the json file as a result, and a handy json search engine is needed, here I recommand meilisearch (a github repository ```/meilisearch/meilisearch```)
 
-```get.sh`` just give an easy way to use. Here is the detail of each module:
+```get.sh``` just give an easy way to use. Here is the detail of each module:
 - crawl_selenium.py
     - Usage : ```python3 crawl_selenium.py <inspirehep_id> <temporary_directory>```
     - Open the broswer (headless mod) and collect the citations of article with ```<inspirehep_id>```.
