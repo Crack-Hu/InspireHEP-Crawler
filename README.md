@@ -24,4 +24,4 @@
     - Gives the final json of all citations, with ```titles```, ```key_words```, ```abstracts```    
 
 - intersection.py
-    - Usage : ```intersection.py 1.json 2.json ... re.json```
+    - Usage : ```python3 intersection.py 1.json 2.json ... re.json```
