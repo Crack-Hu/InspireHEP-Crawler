@@ -25,3 +25,6 @@
 
 - intersection.py
     - Usage : ```python3 intersection.py 1.json 2.json ... re.json```
+
+- union.py
+    - Usage : ```python3 union.py 1.json 2.json ... re.json```
