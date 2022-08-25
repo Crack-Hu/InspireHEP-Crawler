@@ -26,17 +26,22 @@ with open(collection_path, 'r') as f:
     id_list = [[ii.strip() for ii in i.split(',')] for i in id_list]
     id_list.sort(key=lambda x: int(x[0][1:]))
 
+length = len(id_list)
+
 for i in id_list:
     file_path = os.path.join(dir_json, f'{i[0]}.json')
     if os.path.exists(file_path):
         continue
     
-    print(f'now processing id:{i[0]}...')
-    print('requesting')
+    print(f'now processing id:{i[0]}...', end='\r')
+    print(f' '*40, end='\r')
+    print('requesting', end = '\r')
+    print(f' '*40, end='\r')
     temp = get_raw_json(i[1])
     with open(file_path, 'w') as f:
         f.write(temp)
-    print('hanging on')
+    print(f'hanging on,{int(i[0]/length)}% finished', end='\r')
+    print(f' '*40, end='\r')
     time.sleep(random.uniform(0.5,2))
 #  metadata = rawdate['metadata']
 #  title = metadata['title']
