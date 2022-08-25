@@ -9,6 +9,7 @@ import sys, os
 
 inspirehep_id = sys.argv[1]
 aim_dir = sys.argv[2]
+item_one_page = 50
 
 origin_dir = os.path.join(aim_dir, 'origin_html')
 if not os.path.exists(aim_dir):
@@ -18,7 +19,7 @@ if not os.path.exists(aim_dir):
 
 
 page_length = 10
-pending_url = f"https://inspirehep.net/literature?sort=mostrecent&size=250&page=1&q=refersto%3Arecid%3A{inspirehep_id}"
+pending_url = f"https://inspirehep.net/literature?sort=mostrecent&size={item_one_page}&page=1&q=refersto%3Arecid%3A{inspirehep_id}"
 
 
 ch_options = webdriver.ChromeOptions()
