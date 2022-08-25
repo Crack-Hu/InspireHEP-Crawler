@@ -24,6 +24,7 @@ def get_raw_json(inspire_id):
 with open(collection_path, 'r') as f:
     id_list = f.readlines()
     id_list = [[ii.strip() for ii in i.split(',')] for i in id_list]
+    id_list.sort(key=lambda x: int(x[0][1:]))
 
 for i in id_list:
     file_path = os.path.join(dir_json, f'{i[0]}.json')
