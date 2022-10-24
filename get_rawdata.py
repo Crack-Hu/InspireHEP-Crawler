@@ -33,15 +33,15 @@ for i in id_list:
     if os.path.exists(file_path):
         continue
     
-    print(f'now processing id:{i[0]}...', end='\r')
-    print(f' '*40, end='\r')
-    print('requesting', end = '\r')
-    print(f' '*40, end='\r')
+    #print(f'now processing id:{i[0]}...', end='\r')
+    #print(f' '*80, end='\r')
+    #print('requesting', end = '\r')
+    #print(f' '*80, end='\r')
     temp = get_raw_json(i[1])
     with open(file_path, 'w') as f:
         f.write(temp)
-    print(f'hanging on,{int(i[0]/length)}% finished', end='\r')
-    print(f' '*40, end='\r')
+    print(f' '*80, end='\r')
+    print(f'now:{i[0]} per:{int(int(i[0][1:])/length*100)}% finished', end='\r')
     time.sleep(random.uniform(0.5,2))
 #  metadata = rawdate['metadata']
 #  title = metadata['title']
