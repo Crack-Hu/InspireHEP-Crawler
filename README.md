@@ -35,3 +35,10 @@
 
 - union.py
     - Usage : ```python3 union.py 1.json 2.json ... re.json```
+
+### usage for meilisearch
+- run meilisearch in the current directory
+- run ```curl \
+  -X POST 'http://localhost:7700/indexes/db_name/documents' \
+  -H 'Content-Type: application/json' \
+  --data-binary @temp_json.json``` where db_name should be replaced by the name you want, and temp_json.json is the json file you want to deal with.
