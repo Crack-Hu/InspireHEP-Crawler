@@ -1,5 +1,11 @@
 # InspireHEP-Crawler
 
+- python module needed
+    - bs4
+    - selenium
+        - a driver is needed, for chrome, check the version, and download related driver in ```http://chromedriver.storage.googleapis.com/index.html```, then put it into ```/usr/bin```
+    - requests
+
 - get.sh
     - Usage : ```bash get.sh <inspirehep_id> <temporary_directory> <target_json>```
     - ```get.sh``` gives the json file as a result, and a handy json search engine is needed, here I recommand meilisearch (a github repository ```/meilisearch/meilisearch```)
