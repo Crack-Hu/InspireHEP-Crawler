@@ -14,7 +14,7 @@
 - crawl_selenium.py
     - Usage : ```python3 crawl_selenium.py <inspirehep_id> <temporary_directory>```
     - Open the broswer (headless mod) and collect the citations of article with ```<inspirehep_id>```.
-    - The html would stored in ```./<temporary_directory>i/origin_html```.
+    - The html would stored in ```./<temporary_directory>/origin_html```.
 
 - bs.py
     - Usage : ```python3 bs.py <temporary_directory>```
