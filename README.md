@@ -25,8 +25,8 @@
     - Usage : ```python3 get_rawdata.py <temporary_directory>```
     - Gives the final json of all citations, with the whole information, but in fragmented files.
 
-- join.py
-    - Usage : ```python3 join.py <temporary_directory> <target_json>```
+- join_rawdate.py
+    - Usage : ```python3 join_rawdata.py <temporary_directory> <target_json>```
     - Gives the final json of all citations, with ```titles```, ```key_words```, ```abstracts```    
 
 ### two script to give the collections of given json

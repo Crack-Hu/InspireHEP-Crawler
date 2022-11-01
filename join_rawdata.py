@@ -32,9 +32,10 @@ for i in file_list:
             temp['abstracts'] = [i['value'].lower() for i in metadata['abstracts']]
         except KeyError:
             temp['abstracts'] = None
-        temp['id'] = count
+        temp['count'] = count
         count += 1
         temp['link'] = f'https://inspirehep.net/literature/'+raw_data['id']
+        temp['id'] = raw_data['id']
     re.append(temp)
 
 with open(json_re_path, 'w') as f:
