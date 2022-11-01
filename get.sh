@@ -14,4 +14,4 @@ echo "Starting citations information crawling, json would stored in ./${2}/origi
 python3 get_rawdata.py $2
 
 echo "Merging all the jsons"
-python3 join.py $2 $3
+python3 join_rawdata.py $2 $3
