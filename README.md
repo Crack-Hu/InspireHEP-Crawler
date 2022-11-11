@@ -2,6 +2,7 @@
 
 ### python module needed
 - bs4
+- lxml
 - selenium
     - a driver is needed, for chrome, check the version, and download related driver in ```http://chromedriver.storage.googleapis.com/index.html```, then put it into ```/usr/bin```
 - requests
