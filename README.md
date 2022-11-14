@@ -38,6 +38,7 @@
     - Usage : ```python3 union.py 1.json 2.json ... re.json```
 
 ### usage for meilisearch
+- a quick start guide see ```https://docs.meilisearch.com/learn/getting_started/quick_start.html```
 - run meilisearch in the current directory
 - run ```curl \
   -X POST 'http://localhost:7700/indexes/db_name/documents' \
