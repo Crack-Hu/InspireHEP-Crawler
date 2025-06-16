@@ -1,5 +1,8 @@
 # InspireHEP-Crawler
 
+A Crawler for InspireHEP.
+Star this repository to let me know it's helpful to you.
+
 ### python module needed
 - bs4
 - lxml
