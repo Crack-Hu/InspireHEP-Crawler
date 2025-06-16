@@ -26,7 +26,7 @@ for html_file in html_list:
     with open(os.path.join(html_path, html_file), 'r') as f:
         bs = BeautifulSoup(f.read(), 'lxml')
 
-    re_temp = bs.find_all(name = 'div', attrs = {'class':'ant-card-body'})
+    re_temp = bs.find_all(name = 'div', attrs = {'class':'mv2'})
     for box in re_temp:
         ff.write(','.join(info(box)) + '\n')
     print(f'\rprocessing {(count*100/total_len)}%', end = '', flush = True)
